@@ -7,9 +7,10 @@ Disallow: /_next/
 Disallow: /api/
 
 # Host
-Host: https://brainrot-clicker.app
+Host: https://wackyflip.app
 
 # Sitemaps
-Sitemap: https://brainrot-clicker.app/sitemap.xml
-Sitemap: https://brainrot-clicker.app/sitemap-en.xml
-Sitemap: https://brainrot-clicker.app/sitemap-es.xml
+Sitemap: https://wackyflip.app/sitemap.xml
+Sitemap: https://wackyflip.app/sitemap-en.xml
+Sitemap: https://wackyflip.app/sitemap-da.xml
+Sitemap: https://wackyflip.app/sitemap-ar.xml
