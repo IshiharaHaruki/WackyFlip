@@ -58,7 +58,7 @@ export default {
         <meta property="og:site_name" content={SITE_CONFIG.siteName} />
         <meta property="og:locale" content={currentLocale.ogLocale} />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href={`${SITE_CONFIG.url}${asPath}`} />
+        {/* Canonical URL is handled by Head.tsx component */}
       </>
     );
   },
