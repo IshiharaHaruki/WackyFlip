@@ -49,7 +49,7 @@ const i18nConfig = {
 
 // 网站基础配置
 const SITE_CONFIG = {
-  url: "https://brainrot-clicker.app",
+  url: "https://wackyflip.app",
   title: "Wacky Flip",
   twitter: "@example",
   siteName: "Wacky Flip",
