@@ -1,4 +1,4 @@
-# 🎮 Brainrot Clicker
+# 🎮 Wacky Flip
 
 一个基于 Next.js + Nextra 的游戏展示网站模板，支持游戏嵌入、多语言、多种布局和静态部署。
 
@@ -411,7 +411,7 @@ Made with ❤️ using Next.js + Nextra
 
 单语言版本：https://aab6a5a4.game-launch-boost.pages.dev/
 
-Welcome to Brainrot Clicker! Here you can find a curated collection of amazing games across different categories.
+Welcome to Wacky Flip! Here you can find a curated collection of amazing games across different categories.
 
 ## Featured Layout Configuration Guide
 

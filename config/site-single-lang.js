@@ -7,7 +7,7 @@ const SUPPORTED_LOCALES = {
     localeName: "English",
     ogLocale: "en_US",
     htmlLang: "en",
-    titleSuffix: "- Brainrot Clicker",
+    titleSuffix: "- Wacky Flip",
     isDefault: true,
   },
 };
@@ -35,9 +35,9 @@ const i18nConfig = {
 // 网站基础配置
 const SITE_CONFIG = {
   url: "https://example.com",
-  title: "Brainrot Clicker",
+  title: "Wacky Flip",
   twitter: "@example",
-  siteName: "Brainrot Clicker",
+  siteName: "Wacky Flip",
   // 功能开关配置
   features: {
     i18n: false, // 是否启用多语言启用后将会读取 SUPPORTED_LOCALES 的默认语言作为网站语言
@@ -46,7 +46,7 @@ const SITE_CONFIG = {
   },
   // Logo 配置
   logo: {
-    text: "Brainrot Clicker",
+    text: "Wacky Flip",
     image: "/logo.svg",
     height: 32,
   },

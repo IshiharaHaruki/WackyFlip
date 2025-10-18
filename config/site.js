@@ -7,16 +7,23 @@ const SUPPORTED_LOCALES = {
     localeName: "English",
     ogLocale: "en_US",
     htmlLang: "en",
-    titleSuffix: "- Brainrot Clicker",
+    titleSuffix: "- Wacky Flip",
     isDefault: true,
   },
-  es: {
-    name: "Español",
-    localeName: "Español",
-    ogLocale: "es_ES",
-    htmlLang: "es",
-    titleSuffix: "- Brainrot Clicker",
-    // isDefault: true,
+  da: {
+    name: "Dansk",
+    localeName: "Dansk",
+    ogLocale: "da_DK",
+    htmlLang: "da",
+    titleSuffix: "- Wacky Flip",
+  },
+  ar: {
+    name: "العربية",
+    localeName: "العربية",
+    ogLocale: "ar_AE",
+    htmlLang: "ar",
+    dir: "rtl",
+    titleSuffix: "- Wacky Flip",
   },
 };
 
@@ -43,12 +50,12 @@ const i18nConfig = {
 // 网站基础配置
 const SITE_CONFIG = {
   url: "https://brainrot-clicker.app",
-  title: "Brainrot Clicker",
+  title: "Wacky Flip",
   twitter: "@example",
-  siteName: "Brainrot Clicker",
+  siteName: "Wacky Flip",
   // Logo 配置
   logo: {
-    text: "Brainrot Clicker",
+    text: "Wacky Flip",
     image: "/logo.svg",
     height: 32,
   },
