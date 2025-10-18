@@ -57,10 +57,26 @@ export function Head({ frontMatter, pageMap }: HeadProps): ReactElement {
     
     // 生成页面标题
     const pageTitle = useMemo(() => {
+        // 1. 优先使用 seoTitle（如果存在）
+        if (frontMatter?.seoTitle) {
+            return frontMatter.seoTitle
+        }
+
+        // 2. 获取基础标题
         const baseTitle = frontMatter?.title || meta?.title || themeConfig?.title || ''
-        const suffix = i18nEnabled && currentLocaleConfig?.titleSuffix ? currentLocaleConfig.titleSuffix : ''
-        return `${baseTitle}${suffix}`
-    }, [frontMatter?.title, meta?.title, themeConfig?.title, i18nEnabled, currentLocaleConfig])
+
+        // 3. 智能添加后缀
+        if (i18nEnabled && currentLocaleConfig?.titleSuffix) {
+            // 检查是否已包含品牌名，避免重复
+            const brandName = themeConfig?.siteName || 'Wacky Flip'
+            if (baseTitle.toLowerCase().includes(brandName.toLowerCase())) {
+                return baseTitle // 已包含品牌名，不添加后缀
+            }
+            return `${baseTitle}${currentLocaleConfig.titleSuffix}`
+        }
+
+        return baseTitle
+    }, [frontMatter?.title, frontMatter?.seoTitle, meta?.title, themeConfig?.title, themeConfig?.siteName, i18nEnabled, currentLocaleConfig])
 
     const pageDescription = frontMatter?.description || meta?.description || themeConfig.description
     const ogImage = frontMatter?.cover || frontMatter?.icon || '/og-image.jpg'
