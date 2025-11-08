@@ -1,0 +1,66 @@
+{
+  "name": "seo-optimizer",
+  "version": "1.0.0",
+  "description": "Comprehensive SEO analysis and optimization tool for sitemap validation, meta tags optimization, and content SEO auditing",
+  "author": "Claude Code",
+  "tags": ["seo", "analytics", "sitemap", "meta-tags", "optimization", "audit"],
+  "triggers": {
+    "manual": true,
+    "automatic": {
+      "keywords": [
+        "seo",
+        "sitemap",
+        "meta tags",
+        "meta description",
+        "open graph",
+        "og tags",
+        "twitter card",
+        "hreflang",
+        "canonical",
+        "schema markup",
+        "robots.txt",
+        "seo audit",
+        "seo analysis",
+        "seo optimization"
+      ],
+      "filePatterns": [
+        "**/sitemap.xml",
+        "**/robots.txt",
+        "**/*sitemap*.config.js",
+        "**/*sitemap*.config.ts",
+        "**/next-sitemap.config.*",
+        "**/*.mdx"
+      ]
+    }
+  },
+  "capabilities": [
+    "Sitemap validation and analysis",
+    "Meta tags optimization (title, description, OG, Twitter)",
+    "Multi-language hreflang verification",
+    "Content SEO auditing",
+    "Keyword density analysis",
+    "URL structure optimization",
+    "Schema markup suggestions"
+  ],
+  "options": {
+    "analysisDepth": {
+      "type": "string",
+      "description": "Level of analysis detail",
+      "default": "comprehensive",
+      "enum": ["quick", "standard", "comprehensive"]
+    },
+    "focusAreas": {
+      "type": "array",
+      "description": "Specific SEO areas to focus on",
+      "default": ["sitemap", "meta-tags"],
+      "items": {
+        "enum": ["sitemap", "meta-tags", "content", "technical", "all"]
+      }
+    },
+    "languageCheck": {
+      "type": "boolean",
+      "description": "Check multi-language SEO consistency",
+      "default": true
+    }
+  }
+}

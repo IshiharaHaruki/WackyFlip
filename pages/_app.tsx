@@ -3,9 +3,9 @@ import Script from 'next/script';
 import '../theme/src/styles/globals.css';
 
 // 配置第三方服务的ID
-const GA_MEASUREMENT_ID = 'id'; // Google Analytics ID
+const GA_MEASUREMENT_ID = 'G-6VDY8EH94Z'; // Google Analytics ID
 const ADSENSE_ID = 'ca-pub-6527494970179313';       // Google AdSense ID 
-const CLARITY_ID = 'id';       // Microsoft Clarity ID
+const CLARITY_ID = 'u2swmz3h6n';       // Microsoft Clarity ID
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -45,6 +45,9 @@ export default function App({ Component, pageProps }: AppProps) {
     `
         }
       </Script>
+
+      {/* Ahrefs Web Analytics */}
+      <script src="https://analytics.ahrefs.com/analytics.js" data-key="nOZ5GvYLS+ayvObyemf5SA" async></script>
     </>
   )
 } 
